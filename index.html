@@ -14,8 +14,9 @@
         rel="stylesheet">
 
     <!-- daisyUi CDN  -->
-
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
@@ -23,15 +24,26 @@
             font-family: "Poppins", sans-serif;
         }
     </style>
-
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'bike-primary': '#E76F51',
+              }
+            }
+          }
+        }
+      </script>
 
 </head>
 
-<body class="font-pop">
-    <header>
+<body class="font-pop ">
+    <header class="md:container mx-auto">
         <!-- nav-section  -->
         <div class="navbar bg-base-100">
-            <div class="navbar-start">
+            <div class="flex-1">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -48,9 +60,9 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl">Biker Zone</a>
+                <a class="font-bold text-xl">Biker Zone</a>
             </div>
-            <div class="navbar-center hidden lg:flex ">
+            <div class=" hidden lg:flex ">
                 <ul class="menu menu-horizontal px-1">
                     <li><a>Home</a></li>
                     <li><a>Shop</a></li>
@@ -58,12 +70,12 @@
                     <li><a>Contact</a></li>
                 </ul>
             </div>
-            <div class="navbar-end">
-                <a class="btn btn-warning text-white">Login</a>
+            <div class="">
+                <a class="btn bg-bike-primary text-white">Login</a>
             </div>
         </div>
     </header>
-    <main>
+    <main class="md:container mx-auto">
 
     </main>
     <footer>
